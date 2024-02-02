@@ -1,0 +1,386 @@
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<Title>Admission Form</Title>
+<style>
+body {font-family: Arial, Helvetica, sans-serif;}
+
+/* Full-width input fields */
+input[type=text], input[type=password] {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+}
+
+/* Set a style for all buttons */
+button {
+  background-color: #04AA6D;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+}
+
+button:hover {
+  opacity: 0.8;
+}
+
+/* Extra styles for the cancel button */
+.cancelbtn {
+  width: auto;
+  padding: 10px 18px;
+  background-color: #f44336;
+}
+
+/* Center the image and position the close button */
+.imgcontainer {
+  text-align: center;
+  margin: 24px 0 12px 0;
+  position: relative;
+}
+
+img.avatar {
+  width: 40%;
+  border-radius: 50%;
+}
+
+.container {
+  padding: 16px;
+}
+
+span.psw {
+  float: right;
+  padding-top: 16px;
+}
+
+/* The Modal (background) */
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+  padding-top: 60px;
+}
+
+/* Modal Content/Box */
+.modal-content {
+  background-color: #fefefe;
+  margin: 5% auto 15% auto; /* 5% from the top, 15% from the bottom and centered */
+  border: 1px solid #888;
+  width: 80%; /* Could be more or less, depending on screen size */
+}
+
+/* The Close Button (x) */
+.close {
+  position: absolute;
+  right: 25px;
+  top: 0;
+  color: #000;
+  font-size: 35px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: red;
+  cursor: pointer;
+}
+
+/* Add Zoom Animation */
+.animate {
+  -webkit-animation: animatezoom 0.6s;
+  animation: animatezoom 0.6s
+}
+
+@-webkit-keyframes animatezoom {
+  from {-webkit-transform: scale(0)} 
+  to {-webkit-transform: scale(1)}
+}
+  
+@keyframes animatezoom {
+  from {transform: scale(0)} 
+  to {transform: scale(1)}
+}
+
+/* Change styles for span and cancel button on extra small screens */
+@media screen and (max-width: 300px) {
+  span.psw {
+     display: block;
+     float: none;
+  }
+  .cancelbtn {
+     width: 100%;
+  }
+}
+h1
+{
+    font-size: 20mm;
+    font-family: cursive;
+}
+body
+{
+    background-image: url(https://lh3.googleusercontent.com/VDPp6VUWdRyP3NjQjIcKUJc8M58XLQBRqNcxAJ8ID0KRRCprBl4G-a1VLg6kdHKDJncxmxPnxZo9QGPuHUvCMBAni2VxQ0EjfSvlvQHE=w1000?s=300);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+#logo{
+    width: 29%;
+
+    float: left;
+}
+.nav_main nav{
+    width: 59%;
+    float: right;
+}
+nav ul{
+    float: right;
+}
+nav{
+    height: 100%;
+    background-color: rgb(52, 5, 95);
+    color: white;
+}
+nav a{
+    text-decoration: none;
+    list-style: none;
+    color: rgb(255, 255, 255);
+    font-size: 25px;
+    font-family: 'Gill Sans', 'Gill Sans MT', 'Calibri', 'Trebuchet MS', sans-serif;
+}
+.nav_main{
+    height: 120px;
+}
+
+nav a:hover{
+    color:rgb(9, 240, 78);
+}
+nav li{
+    display: inline;
+    margin-right: 30px;
+    list-style: none;
+    height: 30px;
+}
+
+.media{
+    position: relative;
+    width: 25px;
+    height: 25px;
+}
+.media button img{
+    width: 25px;
+    height: 25px;
+}
+.media button{
+    position: fixed;
+}
+.media button:hover{
+    background-color: rgb(19, 223, 223);
+    
+}
+.media #md1{
+    top: 300px;
+    left: 0%;
+}
+.media #md2{
+    top: 340px;
+    left: 0%;
+}
+.media #md3{
+    top: 380px;
+    left: 0%;
+}
+.media #md4{
+    top: 420px;
+    left: 0%;
+}
+body{
+    background-color: beige;
+}
+#n1{
+    animation: b1 5s linear infinite alternate;
+}
+@keyframes b1{
+    0%{
+        color: yellow;
+    }
+    25%{
+        color: chartreuse;
+    }
+    50%{
+        color: aqua;
+    }
+    75%{
+        color: darkorange;
+    }
+    100%{
+        color: aliceblue;
+    }
+}
+#n2{
+    animation: b2 5s linear infinite alternate;
+}
+@keyframes b2{
+    0%{
+        color: aliceblue;
+    }
+    25%{
+        color: yellow;
+    }
+    50%{
+        color: chartreuse;
+    }
+    75%{
+        color: aqua;
+    }
+    100%{
+        color: darkorange;
+    }
+}
+
+#n3{
+    animation: b3 5s linear infinite alternate;
+}
+@keyframes b3{
+    0%{
+        color: darkorange;
+    }
+    25%{
+        color: aliceblue;
+    }
+    50%{
+        color: yellow;
+    }
+    75%{
+        color: chartreuse;
+    }
+    100%{
+        color: aqua;
+    }
+}
+
+#n4{
+    animation: b4 5s linear infinite alternate;
+}
+@keyframes b4{
+    0%{
+        color: aqua;
+    }
+    25%{
+        color: darkorange;
+    }
+    50%{
+        color: aliceblue;
+    }
+    75%{
+        color: yellow;
+    }
+    100%{
+        color: chartreuse;
+    }
+}
+#n5{
+    animation: b4 5s linear infinite alternate;
+}
+@keyframes b4{
+    0%{
+        color: aqua;
+    }
+    25%{
+        color: darkorange;
+    }
+    50%{
+        color: aliceblue;
+    }
+    75%{
+        color: yellow;
+    }
+    100%{
+        color: chartreuse;
+    }
+}
+</style>
+</head>
+<body>
+  <div class="nav_main">
+    <header><img id="logo" src="https://www.pngitem.com/pimgs/m/42-423552_bannari-amman-college-logo-hd-png-download.png"></header>
+   <nav>
+       
+       <ul>
+           <li><a href="index.html" id="n1">HOME</a></li>
+           <li><a href="ABOUT.HTML" id="n2">ABOUT BIT</a></li>
+           <li><a href="Academics.html" id="n3">ACADEMICS</a></li>
+           <li><a href="Admisssion.html" id="n4">ADMISSION</a></li>
+           <li><a href="contact.html" id="n5">CONTACT</a></li>
+       </ul>
+   </nav>
+   <div class="first_image">
+   </div>
+   
+</div>
+
+
+<center><h1>Admission Form</h1>
+
+<button onclick="document.getElementById('id01').style.display='block'" style="width:auto;">Click Here To Register</button></center>
+
+<div id="id01" class="modal">
+
+  <form class="modal-content animate" action="/action_page.php" method="post">
+    <div class="imgcontainer">
+      <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
+      <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQeeUl9IZDN97pBQNgeunx6dD1df-4g7vkPFw&usqp=CAU" alt="Avatar" class="avatar">
+    </div>
+
+    <center><div class="container">
+      <label for="name"><b>Name</b></label>
+      <input placeholder="Name" name="name" required><br><br>
+
+      <label for="ph.no"><b>Mobile Number</b></label>
+      <input type="number" placeholder="Mobile Number" name="ph.no" required><br><br>
+
+      <label for="mail"><b>Mail ID</b></label>
+      <input placeholder="Mail Id" name="mail" required><br><br>
+
+      <label for="address"><b>Address</b></label>
+      <input placeholder="Address" name="address" required><br><br>
+
+      <label for="10thmark"><b>10th Mark in Percentage</b></label>
+      <input type="number" placeholder="10th Mark in Percentage" name="10thmark" required><br><br>
+
+      <label for="12thmark"><b>12th Mark in Percentage</b></label>
+      <input type="number" placeholder="12th Mark in Percentage" name="12thmark" required><br><br>
+        
+      <button type="submit">Submit Form</button>
+    </div></center>
+
+    <div class="container" style="background-color:#f1f1f1">
+      <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Cancel</button>
+    </div>
+  </form>
+</div>
+
+<script>
+// Get the modal
+var modal = document.getElementById('id01');
+
+// When the user clicks anywhere outside of the modal, close it
+window.onclick = function(event) {
+    if (event.target == modal) {
+        modal.style.display = "none";
+    }
+}
+</script>
+
+</body>
+</html>

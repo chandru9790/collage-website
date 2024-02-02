@@ -1,0 +1,222 @@
+.bit_box{
+    display: flex;
+    padding: 10px;
+}
+.bit_box .bit_sub_box{
+    border: 2px solid black;
+    flex: 20%;
+    margin-right: 5px;
+}
+.bit_sub_box img{
+    width: 50px;
+    height: 50px;
+    
+}
+.bit_sub_extra_box1,.bit_sub_extra_box2,.bit_sub_extra_box3{
+    height: 100%;
+   
+}
+.bit_sub_extra_box1:hover{
+    
+    font-style: italic;
+}
+.bit_sub_extra_box2:hover{
+    
+    font-style: italic;
+    
+}
+.bit_sub_extra_box3:hover{
+    
+    font-style: italic;
+}
+p{
+    font-family:cursive ;
+}
+#v{
+    text-align: center;
+    color:blueviolet
+}
+body{
+   background-image: url(https://media-exp1.licdn.com/dms/image/C561BAQHPo7NZHYIJTg/company-background_10000/0/1519799240892?e=2147483647&v=beta&t=TbUCKEXVA2ffH3ONeHguCBGQum2IOBURtMI1mW5Q-gc
+
+   );
+   background-size: cover;
+}
+#i{
+    color: red;
+}
+#logo{
+    width: 29%;
+
+    float: left;
+}
+.nav_main nav{
+    width: 59%;
+    float: right;
+}
+nav ul{
+    float: right;
+}
+nav{
+    height: 100%;
+    background-color: rgb(52, 5, 95);
+    color: white;
+}
+nav a{
+    text-decoration: none;
+    list-style: none;
+    color: rgb(255, 255, 255);
+    font-size: 25px;
+    font-family: 'Gill Sans', 'Gill Sans MT', 'Calibri', 'Trebuchet MS', sans-serif;
+}
+.nav_main{
+    height: 120px;
+}
+
+nav a:hover{
+    color:rgb(9, 240, 78);
+}
+nav li{
+    display: inline;
+    margin-right: 30px;
+    list-style: none;
+    height: 30px;
+}
+
+.media{
+    position: relative;
+    width: 25px;
+    height: 25px;
+}
+.media button img{
+    width: 25px;
+    height: 25px;
+}
+.media button{
+    position: fixed;
+}
+.media button:hover{
+    background-color: rgb(19, 223, 223);
+    
+}
+.media #md1{
+    top: 300px;
+    left: 0%;
+}
+.media #md2{
+    top: 340px;
+    left: 0%;
+}
+.media #md3{
+    top: 380px;
+    left: 0%;
+}
+.media #md4{
+    top: 420px;
+    left: 0%;
+}
+body{
+    background-color: beige;
+}
+#n1{
+    animation: b1 5s linear infinite alternate;
+}
+@keyframes b1{
+    0%{
+        color: yellow;
+    }
+    25%{
+        color: chartreuse;
+    }
+    50%{
+        color: aqua;
+    }
+    75%{
+        color: darkorange;
+    }
+    100%{
+        color: aliceblue;
+    }
+}
+#n2{
+    animation: b2 5s linear infinite alternate;
+}
+@keyframes b2{
+    0%{
+        color: aliceblue;
+    }
+    25%{
+        color: yellow;
+    }
+    50%{
+        color: chartreuse;
+    }
+    75%{
+        color: aqua;
+    }
+    100%{
+        color: darkorange;
+    }
+}
+
+#n3{
+    animation: b3 5s linear infinite alternate;
+}
+@keyframes b3{
+    0%{
+        color: darkorange;
+    }
+    25%{
+        color: aliceblue;
+    }
+    50%{
+        color: yellow;
+    }
+    75%{
+        color: chartreuse;
+    }
+    100%{
+        color: aqua;
+    }
+}
+
+#n4{
+    animation: b4 5s linear infinite alternate;
+}
+@keyframes b4{
+    0%{
+        color: aqua;
+    }
+    25%{
+        color: darkorange;
+    }
+    50%{
+        color: aliceblue;
+    }
+    75%{
+        color: yellow;
+    }
+    100%{
+        color: chartreuse;
+    }
+}
+#n5{
+    animation: b4 5s linear infinite alternate;
+}
+@keyframes b4{
+    0%{
+        color: aqua;
+    }
+    25%{
+        color: darkorange;
+    }
+    50%{
+        color: aliceblue;
+    }
+    75%{
+        color: yellow;
+    }
+    100%{
+        color: chartreuse;
+    }
+}
